@@ -8,5 +8,5 @@ import android.support.v4.app.Fragment;
  */
 public interface IComponentService {
 
-    Fragment getFragment();
+    Fragment getFragment(String content);
 }

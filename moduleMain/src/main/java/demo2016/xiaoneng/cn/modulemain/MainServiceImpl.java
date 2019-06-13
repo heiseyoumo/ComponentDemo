@@ -9,7 +9,7 @@ import demo2016.xiaoneng.cn.componentservice.IComponentService;
  */
 public class MainServiceImpl implements IComponentService {
     @Override
-    public Fragment getFragment() {
-        return MainFragment.newInstance();
+    public Fragment getFragment(String userName) {
+        return MainFragment.newInstance(userName);
     }
 }

@@ -13,7 +13,7 @@ import demo2016.xiaoneng.cn.componentservice.ComponentServiceFactory;
  * @date 2019-06-12
  */
 @Interceptor(priority = 1, name = "homeInterceptor")
-public class HomeInterceptor implements IInterceptor {
+public class MineInterceptor implements IInterceptor {
     @Override
     public void process(Postcard postcard, InterceptorCallback callback) {
         switch (postcard.getPath()) {

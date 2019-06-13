@@ -15,6 +15,8 @@ import demo2016.xiaoneng.cn.componentservice.IComponentService;
  * @date 2019-06-12
  */
 public class MainActivity extends FragmentActivity {
+    private String token = "我是主app中传过来的token";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +24,7 @@ public class MainActivity extends FragmentActivity {
         FragmentManager supportFragmentManager = getSupportFragmentManager();
         IComponentService mainService = ComponentServiceFactory.getInstance().getMainService();
         if (mainService != null) {
-            supportFragmentManager.beginTransaction().add(R.id.container, mainService.getFragment(), "哈哈").commit();
+            supportFragmentManager.beginTransaction().add(R.id.container, mainService.getFragment("pengkuanwang"), token).commit();
         }
         findViewById(R.id.textView).setOnClickListener(new View.OnClickListener() {
             @Override
