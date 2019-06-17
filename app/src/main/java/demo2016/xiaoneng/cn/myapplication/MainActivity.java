@@ -36,17 +36,14 @@ public class MainActivity extends FragmentActivity {
 
                     @Override
                     public void onFound(Postcard postcard) {
-                        //super.onFound(postcard);
                     }
 
                     @Override
                     public void onLost(Postcard postcard) {
-                        //super.onLost(postcard);
                     }
 
                     @Override
                     public void onInterrupt(Postcard postcard) {
-                        //super.onInterrupt(postcard);
                     }
                 });
             }
